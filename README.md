@@ -1,7 +1,12 @@
 # tiny-chess
 
+[![make.fun · tiny-chess-01](https://make.fun/badge/tiny-chess-01.svg)](https://make.fun/bounty/tiny-chess-01)
+[![rank](https://make.fun/badge/tiny-chess-01/wildanroby29/tiny-chess/rank.svg)](https://make.fun/bounty/tiny-chess-01)
+[![reward](https://make.fun/badge/tiny-chess-01/wildanroby29/tiny-chess/reward.svg)](https://make.fun/bounty/tiny-chess-01)
+
 A chess engine in 4 KB of Python (3.13 stdlib only) for the make.fun contest
 "Build the strongest chess engine in 4 KB of Python" (tiny-chess-01).
+Play it at [make.fun/bounty/tiny-chess-01](https://make.fun/bounty/tiny-chess-01) — referral code `m2yyzmmg`.
 
 ## Design
 
@@ -22,7 +27,8 @@ A chess engine in 4 KB of Python (3.13 stdlib only) for the make.fun contest
 
 ## Files
 
-- `main.py` — the whole engine, self-extracting (lzma + base85). 4,077 bytes.
+- `main.py` — the whole engine, self-extracting (makefun-compress/v1: lzma stream of the readable source). 3,698 bytes.
+- `src.py` — the readable source (uncommitted working copy; the packed entry is made with `node cli/makefun.mjs compress src.py --out main.py`).
 - `README.md`, `LICENSE` — this file and the MIT license.
 
 ## Inspiration
